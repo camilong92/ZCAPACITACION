@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Grupo Capacitación</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFGJPG_01TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFGJPG_01</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFMJPG_01</FUNCNAME>
+     <SHORT_TEXT>Modulo de Función</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_I_OP1</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_I_OP2</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_I_OP3</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>E_I_RESULTADO</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>DIVISION_CERO</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_I_OP1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Número natural</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_I_OP2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Número natural</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_I_OP3</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Número natural</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_I_RESULTADO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Número natural</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DIVISION_CERO</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Error División por cero</STEXT>
+       <INDEX> 005</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZMFJPG_02</FUNCNAME>
+     <SHORT_TEXT>Modulo de Funcion Ejercicio</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>SO_FKART</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTTJPG_01</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>SO_FKDAT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTTJPG_02</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>SO_ERNAME</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SHP_ERNAM_RANGE_T</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>GTI_VBRK</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTTJPG_03</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>CLASE_VACIA</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>FECHA_UNDEFINED</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>NAME_UNDEFINED</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>SO_FKART</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Clase de factura</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SO_FKDAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fecha de factura para el índice de factura e impresión</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SO_ERNAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nombre del responsable que ha añadido el objeto</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GTI_VBRK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tipo Tabla Export ejercicio 2</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CLASE_VACIA</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Ingresar Clase Factura</STEXT>
+       <INDEX> 005</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FECHA_UNDEFINED</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Fecha de Factura no Encontrada</STEXT>
+       <INDEX> 006</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NAME_UNDEFINED</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Nombre no Encontrado</STEXT>
+       <INDEX> 007</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZMFJPG_03</FUNCNAME>
+     <SHORT_TEXT>Modulo de Funcion ejercicio 3</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>GTI_VBAK</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTTJPG_EJ03</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>GTI_VBPA</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTTJPG_EJ03_VBPA</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>GTI_KNA1</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTTJPG_EJ03_KNA1</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>GTI_VBAK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tipo Tabal  VBAK para modulo de función Ejercicio 3</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GTI_VBPA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tipo Taba para Estructura VBPA del ejercicio 3</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GTI_KNA1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tipo Tabla de la Estructura KNA1 del ejercicio 3</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZMFJPG_04</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Modulo de Funcion ejercicio 3</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>GTI_VBAK</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZTTJPG_EJ03</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>GTI_VBPA</PARAMETER>
+       <TYP>ZTTJPG_EJ03_VBPA</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>GTI_KNA1</PARAMETER>
+       <TYP>ZTTJPG_EJ03_KNA1</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>GTI_VBAK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tipo Tabal  VBAK para modulo de función Ejercicio 3</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GTI_VBPA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tipo Taba para Estructura VBPA del ejercicio 3</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GTI_KNA1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tipo Tabla de la Estructura KNA1 del ejercicio 3</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

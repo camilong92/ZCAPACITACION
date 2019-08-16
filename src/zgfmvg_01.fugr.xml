@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Grpo de funciones C ABAP</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZGFMVG_01TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZGFMVG_01</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFMMVG_03</FUNCNAME>
+     <SHORT_TEXT>Modulo de funcion tabla kovn</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>ZFMMVG_04</FUNCNAME>
+     <SHORT_TEXT>Modulo de funcion Tarea 3</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>ZFMMVG_05</FUNCNAME>
+     <SHORT_TEXT>Tarea 3</SHORT_TEXT>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>grupo funciones ejercicio 03</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFGJOC_EJERCICIO03TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFGJOC_EJERCICIO03</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFMJOC_EJERCICIO03</FUNCNAME>
+     <SHORT_TEXT>modulo funciones ejercicio 03</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_TI_VBAK</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTTJOC_EJERCICIO03</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>E_TI_TVKOT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTTJOC_EJERCICIO03_2</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_TI_VBAK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>tipo tabla vbak</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_TI_TVKOT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>tipo tabla TVKOT organizacion ventas</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

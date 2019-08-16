@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZDEBSZ_04</ROLLNAME>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <DOMNAME>ZDMBSZ_04</DOMNAME>
+    <HEADLEN>15</HEADLEN>
+    <SCRLEN1>06</SCRLEN1>
+    <SCRLEN2>06</SCRLEN2>
+    <SCRLEN3>15</SCRLEN3>
+    <DDTEXT>Elemento de datos para nombre</DDTEXT>
+    <REPTEXT>Nombre Completo</REPTEXT>
+    <SCRTEXT_S>Nombre</SCRTEXT_S>
+    <SCRTEXT_M>Nombre</SCRTEXT_M>
+    <SCRTEXT_L>Nombre Completo</SCRTEXT_L>
+    <DTELMASTER>S</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

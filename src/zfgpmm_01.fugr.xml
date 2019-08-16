@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>grupo de funciones de pruebas</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFGPMM_01TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFGPMM_01</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFMPMM_01</FUNCNAME>
+     <SHORT_TEXT>modulo de funciones de pruebas</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_C_OP1</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_C_OP2</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>E_I_RESULTADO</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>DIVISION_CERO</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_C_OP1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Número natural</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_C_OP2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Número natural</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_I_RESULTADO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Número natural</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DIVISION_CERO</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Se está dividiendo por cero</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFMPMM_02</FUNCNAME>
+     <SHORT_TEXT>modulo de funcion 2</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_TI_FKART</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTTPMM_01</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_TI_FKDAT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTTPMM_02</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_TI_ERNAM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SHP_ERNAM_RANGE_T</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>E_TI_RESULTADO</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTTPMM_03</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_TI_FKART</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>tipo tabla rango clase de factura</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_TI_FKDAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>tipo tabla rango para el fkdat</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_TI_ERNAM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabla rango p.nombre del usuario que creó una entrega</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_TI_RESULTADO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>tipo tabla para el export</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFMPMM_03</FUNCNAME>
+     <SHORT_TEXT>Modulo de funciones para el select tab TVAKT</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_ED_IDIOMA</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>LANGU</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>I_GTI_TVAKT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTTPMM_05</TYP>
+      </RSCHA>
+     </CHANGING>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>E_TI_RESULTADO</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTTPMM_04</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_ED_IDIOMA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Clave de idioma</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_TI_RESULTADO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tipo tabla para guardar los valores de la tabla TVAKT</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_GTI_TVAKT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>tipo de tabla semejante a la tabla interna gti_vbak</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

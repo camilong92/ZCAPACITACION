@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>GRupo de funciones Tarea ABAP</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZGFMVG_03TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZGFMVG_03</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFMMVG_06</FUNCNAME>
+     <SHORT_TEXT>Modulo de funciones Tarea 3</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>GTI_VBAK</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTTMVG_07</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>GTI_KOVN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTTMVG_06</TYP>
+      </RSCHA>
+     </CHANGING>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>GTI_VBAK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tipo tabla de la tabla vbak</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GTI_KOVN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tipo tabla para guardar los datos de la tabla KONV</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

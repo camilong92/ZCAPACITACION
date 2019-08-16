@@ -1,0 +1,53 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZRBSZ_EJERCICIO03_V
+*&---------------------------------------------------------------------*
+
+TYPES:
+  BEGIN OF gtp_so,
+    vbeln TYPE vbeln_va,
+    auart TYPE auart,
+    erdat TYPE erdat,
+  END OF gtp_so,
+  BEGIN OF gtp_vbap,
+    vbeln TYPE vbeln_va,
+    posnr TYPE posnr_va,
+  END OF gtp_vbap,
+  BEGIN OF gtp_vbak,
+    vbeln TYPE vbeln_va,
+    erdat TYPE erdat,
+    auart TYPE auart,
+    netwr TYPE netwr,
+    waerk TYPE waerk,
+  END OF gtp_vbak,
+  BEGIN OF gtp_alv,
+    vbeln TYPE vbeln_va,
+    erdat TYPE erdat,
+    auart TYPE auart,
+    netwr TYPE netwr,
+    waerk TYPE waerk,
+    count TYPE count,
+  END OF gtp_alv,
+  BEGIN OF gtp_program,
+    uname  TYPE uname,
+    progr  TYPE programm,
+    datum  TYPE datum,
+    uzeit  TYPE uzeit,
+    count_ TYPE count,
+  END OF gtp_program,
+  gtp_ti_vbap    TYPE STANDARD TABLE OF gtp_vbap,
+  gtp_ti_vbak    TYPE STANDARD TABLE OF gtp_vbak,
+  gtp_ti_alv     TYPE STANDARD TABLE OF gtp_alv,
+  gtp_ti_program TYPE STANDARD TABLE OF gtp_program.
+
+DATA:
+  gwa_so       TYPE gtp_so,
+  gwa_vbap     TYPE gtp_vbap,
+  gwa_vbak     TYPE gtp_vbak,
+  gwa_alv      TYPE gtp_alv,
+  gti_vbap     TYPE gtp_ti_vbap,
+  gti_vbak     TYPE gtp_ti_vbak,
+  gti_vbak_aux TYPE gtp_ti_vbak,
+  gti_alv      TYPE gtp_ti_alv,
+  gwa_program  TYPE ztbsz_ejercicio3,
+  gti_program  TYPE gtp_ti_program,
+  lo_salv      TYPE REF TO cl_salv_table.
